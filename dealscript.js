@@ -2,12 +2,19 @@
 
 //It is crude and done hastily, and doesn't include any duplication checking
 
+var cardPointer;
+cardPointer = 0;
+var cardQuantity;
+cardQuantity = 5;
+
 function reset() {
 	//Defines the function which resets the screen
 	//Declare and initialize variables
 	var cardId = "";
 	var cardBack = "assets/b1fv.png";
 	
+	//Testing LOG
+	console.log("cardQuantity is "+ cardQuantity);
 	//Reset Card Deck and global variables
 	document.getElementById("cardDeck").src = cardBack;
 	cardPointer=0;
@@ -95,17 +102,10 @@ function getVisibleCards() {
 	return visC;
 };
 
-function main() {
-	var cardPointer = 0;
-	var cardQuantity = 5;
+//Adding behaviour to the elements
 
-	//Adding behaviour to the elements
-	document.getElementById("cardDeck").addEventListener("click",resolveClick,false);
-	document.getElementById("cardNo1").addEventListener("click",updateInterface,false);
-	document.getElementById("cardNo2").addEventListener("click",updateInterface,false);
-	document.getElementById("cardNo5").addEventListener("click",updateInterface,false);
-};
+document.getElementById("cardDeck").addEventListener("click",resolveClick,false);
+document.getElementById("cardNo1").addEventListener("click",updateInterface,false);
+document.getElementById("cardNo2").addEventListener("click",updateInterface,false);
+document.getElementById("cardNo5").addEventListener("click",updateInterface,false);
 
-//Invokes the main script
-
-main();
