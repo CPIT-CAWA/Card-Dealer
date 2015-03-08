@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<!--<link rel="stylesheet" type="text/css" href="CardDealerFormat">-->
+</head>
+<body>
+	<div class="cards" id="cards">
+		<!--The card deck-->
+		<img src="assets/b1fv.png" alt="The Card Deck" id="cardDeck">
+		
+		<!--The dealable cards-->
+		<img src="assets/b1fv.png" alt="A Card" id="card0">
+		<img src="assets/b1fv.png" alt="A Card" id="card1">
+		<img src="assets/b1fv.png" alt="A Card" id="card2">
+		<img src="assets/b1fv.png" alt="A Card" id="card3">
+		<img src="assets/b1fv.png" alt="A Card" id="card4">
+	</div>
+	<div>
+		<div class="options">
+			<input type="radio" name="cardNo" id="cardNo1" value="1">One</input>
+			<input type="radio" name="cardNo" id="cardNo2" value="2">Two</input>
+			<input type="radio" name="cardNo" id="cardNo5" value="5" checked="checked">Five</input>
+		</div>
+		<div class="jokers">
+			<input type="checkbox" id="jokers" value="1">Include Jokers?</input>
+		</div>
+	</div>
+	
+	<script src="dealscript.js"></script>
+	<script>
+		<!--Should be removed by final solution, for testing only-->
+	</script>
+</body>
+</html>
